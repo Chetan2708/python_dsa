@@ -9,7 +9,7 @@ class TwoStacks :
         
     def push1(self,x):
         if self.top1 < self.top2 - 1:
-            self.top1 = self.top1 + 1 
+            self.top1= self.top1 + 1 
             self.arr[self.top1] = x 
             return True
         return False
@@ -40,7 +40,6 @@ class TwoStacks :
     
     def size2(self):
         return self.size - self.top2
-        
         
         
 ts = TwoStacks(5)
