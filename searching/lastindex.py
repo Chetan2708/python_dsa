@@ -1,3 +1,4 @@
+
 def fun(l):
     low =0
     high = len(l) - 1
