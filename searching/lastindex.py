@@ -14,4 +14,4 @@ def fun(l):
     return index
 l= [5,10,10,20,20]
 x=20
-print(fun(l))
+print( fun(l) )
