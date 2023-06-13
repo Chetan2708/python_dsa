@@ -22,22 +22,30 @@
 # print(f"scndmax val is: {scndlrge(arr)}")
 
 
-def scndlrge(arr):
-    lar = arr[0]
-    scl= None
+def get_second_largest(arr):
+    largest = arr[0]
+    second_largest = None
+
+    # Iterate over the array starting from the second element
     for x in arr[1:]:
-        if x> lar:
-            scl = lar 
-            lar = x
-        elif x != lar:
-            if scl ==None or scl<x:
-                scl =x
-    return scl
+        if x > largest:
+            # If the current element is larger than the largest,
+            # update the second_largest and largest accordingly
+            second_largest = largest
+            largest = x
+        elif x != largest:
+            # If the current element is not equal to the largest,
+            # and it's either the first occurrence or larger than the second_largest,
+            # update the second_largest accordingly
+            if second_largest is None or x > second_largest:
+                second_largest = x
 
-arr =[]
-n = int(input())
+    return second_largest
+
+arr = []
+n = int(input("Enter the number of elements: "))
 for i in range(n):
-    f = int(input())
-    arr.append(f)
-print(f"scndmax val is: {scndlrge(arr)}")
+    element = int(input(f"Enter element {i + 1}: "))
+    arr.append(element)
 
+print(f"The second largest value is: {get_second_largest(arr)}")
