@@ -7,12 +7,11 @@ def equi(l):
         sum += l[i]
         right_sum = sum
     for i in range(0, len(l)):
-        # subtarct the fist element from sum , suppose 21 - 3 = 19
-        right_sum -= l[i]
+        
+        right_sum -= l[i]  # subtarct the fist element from sum , suppose 21 - 3 = 19
         if (left_sum == right_sum):  # compare left element to right element 0 == 19
             return 'index is', i
-        left_sum += l[i]
-        # add 1st element to left element 3 , now right sum = 19 ....compare it until right sum is equal to left sum
+        left_sum += l[i]  # add 1st element to left element 3 , now right sum = 19 ....compare it until right sum is equal to left sum
     else:
       return -1 
 
