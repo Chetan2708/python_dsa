@@ -5,11 +5,11 @@ def subar(l):
     for i in range(len(l)):
         curr_sum = max(curr_sum+l[i], l[i])
         maX_sum = max(maX_sum , curr_sum)
-    return maX_sum
+    return maX_sum 
 
 
 
-
+#2nd approach (long way) 
 
     # def maxSubArray(self, l: List[int]) -> int:
     #     cur_sum= 0
