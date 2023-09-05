@@ -12,7 +12,6 @@ def fun (l):
     return res
 
 
-
 l = [1,1,1,2,2,3,3,3,3,3,3,3,3,3]
 res = fun(l)
 for i in range(res):
