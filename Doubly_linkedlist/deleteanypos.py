@@ -4,7 +4,7 @@ class Node:
         self.next = None
         self.prev = None
 def delatpos(head,pos):
-    count = 0
+    count  = 0
     curr = head
     while curr:          #edge case 
         count+=1
