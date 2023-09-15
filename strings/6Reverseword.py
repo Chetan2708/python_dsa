@@ -11,6 +11,7 @@ s = input()  # Take input from the user
 s = list(s)  # Convert input string to a list of characters
 start = 0  # Start index for word reversal
 
+
 while True:
     try:
         # Find the index of the next space character (' ') starting from 'start'
