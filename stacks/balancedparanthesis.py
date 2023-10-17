@@ -16,7 +16,6 @@ def fun (string):
             else:
                 stack.pop()             #remove one bracket from  stack if matching is Found  
     
-    
     if stack:                        #if after the loop there is still any opening bracket left return false
         return False
     else:
