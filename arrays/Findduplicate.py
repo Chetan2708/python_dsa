@@ -4,6 +4,7 @@
 
 def find(l):
     slow , fast = l[0] , l[0]
+ 
     while True :
         slow = l[slow]
         fast = l[l[fast]]
