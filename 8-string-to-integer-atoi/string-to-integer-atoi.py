@@ -10,12 +10,15 @@ class Solution:
             if i=='-' and num!= True:
                 sign*=-1
                 l+=i
+                
             elif i=='+' and num!=True:
                 l+=i
                 continue
+                
             elif ord('0')<=ord(i)<=ord('9'):
                 res+=i
                 num=True
+                
             elif not ord('0')<=ord(i)<=ord('9'):
                 break
 
