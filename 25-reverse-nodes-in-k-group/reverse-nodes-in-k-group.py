@@ -4,28 +4,31 @@
 #         self.val = val
 #         self.next = next
 class Solution:
-    def reverseKGroup(self, head: Optional[ListNode], k: int) -> Optional[ListNode]:
-        count = 0 
+     def reverseKGroup(self, head: Optional[ListNode], k: int) -> Optional[ListNode]:
+        if head is None:
+            return None
+
+        prev = next = None
+        curr = head
+        count = 0
+
+        # Check if there are at least k elements remaining
         temp = head
-        while temp:
-            temp= temp.next
-            count+=1
-        n = count//k
+        for _ in range(k):
+            if temp is None:
+                return head  # Less than k elements remaining, no reversal needed
+            temp = temp.next
 
-        prev = dummy = ListNode()
-
-        dummy.next = head
-
-        while n:
-            curr = prev.next
-            nex = curr.next
-            for _ in range(1, k):
-                curr.next = nex.next
-                nex.next = prev.next
-                prev.next = nex
-                nex = curr.next 
+        # Reverse the first k group
+        while curr and count < k:
+            next = curr.next
+            curr.next = prev
             prev = curr
-            n-=1
-        return dummy.next
-        
-        
+            curr = next
+            count += 1
+
+        # Recursion
+        if next:
+            head.next = self.reverseKGroup(next, k)
+
+        return prev
