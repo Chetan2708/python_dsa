@@ -4,12 +4,13 @@
 #         self.val = val
 #         self.left = left
 #         self.right = right
-class Solution:
+
+class Solution :
     def isSameTree(self, p: Optional[TreeNode], q: Optional[TreeNode]) -> bool:
         def traverse (root,l):
             if root == None:
                 l.append(None)
-                return 
+                return  
             l.append(root.val)
             left = traverse(root.left , l )
             right = traverse(root.right , l)
