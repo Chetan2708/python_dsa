@@ -12,7 +12,7 @@ class Solution :
                 l.append(None)
                 return  
             l.append(root.val)
-            left = traverse(root.left , l )
+            left = traverse(root.left , l  )
             right = traverse(root.right , l)
         
 
