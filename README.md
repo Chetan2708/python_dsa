@@ -86,12 +86,23 @@ This repository is designed to help developers and students understand the found
 Contributions are welcome! If you'd like to contribute, please follow these steps:
 
 1. Fork the repository.
-2. Create a new branch (`git checkout -b feature-branch`).
-3. Make your changes and commit them (`git commit -m 'Add some feature'`).
-4. Push to the branch (`git push origin feature-branch`).
+2. Create a new branch
+```bash
+    git checkout -b feature-branch
+```
+  
+3.Make your changes and commit them 
+```bash
+git commit -m 'Add some feature'
+```
+
+4.Push to the branch
+ ```bash
+   git push origin feature-branch
+   ```
 5. Open a pull request.
 
-Please make sure your code follows the project's coding standards and includes appropriate test cases.
+6. Please make sure your code follows the project's coding standards and includes appropriate test cases.
 
 License
 This repository is licensed under the MIT License. See the LICENSE file for more details.
