@@ -31,61 +31,67 @@ Welcome to the **Python DSA** repository! This repository contains a collection 
 
 This repository is designed to help developers and students understand the foundational concepts of data structures and algorithms in Python. Each module is accompanied by well-documented code and explanations, making it easier to grasp the theory and apply it in practice.
 
-## Getting Started
+### Data Structures
 
-To get started with the code in this repository:
+- **Arrays**
+  - Basic operations: insertion, deletion, and traversal.
+  - Searching algorithms: Linear Search, Binary Search.
 
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/Chetan2708/python_dsa.git
-2.  ```bash
-    cd python_dsa
-3.  ```bash
-    python script_name.py
+- **Linked Lists**
+  - Implementation of singly linked lists.
+  - Operations: insertion, deletion, and reversal of linked lists.
 
-Data Structures
-Arrays
-  Basic operations like insertion, deletion, and traversal.
-  Searching algorithms like Linear Search and Binary Search.
-Linked Lists
-  Implementation of singly linked lists.
-  Operations like insertion, deletion, and reversal of linked lists.
-Stacks
-  Stack implementation using arrays and linked lists.
-  Applications of stacks, including balanced parentheses checking and expression evaluation.
-Queues
-  Queue implementation using arrays and linked lists.
-  Concepts like circular queues and dequeues.
-Trees
-  Binary Trees, Binary Search Trees (BST), and AVL Trees.
-  Tree traversal techniques: Inorder, Preorder, and Postorder.
-Graphs
-  Graph representations using adjacency lists and matrices.
-  Graph traversal techniques: BFS and DFS.
-Hash Tables
-  Implementation of hash tables with collision resolution techniques like chaining and open addressing.
-Algorithms
-Sorting
-  Implementation of sorting algorithms: Bubble Sort, Merge Sort, Quick Sort, and more.
-Searching
-  Linear Search, Binary Search, and other advanced search algorithms.
-Recursion
-  Understanding recursion through examples like the Fibonacci series and Tower of Hanoi.
-Dynamic Programming
-  Dynamic programming techniques for solving problems like the knapsack problem, longest common subsequence, etc.
-Greedy Algorithms
-  Implementation of greedy algorithms like Dijkstra's shortest path, Huffman coding, etc.
-Backtracking
-  Solving problems using backtracking, such as N-Queens and Sudoku.
-Contributing
-  Contributions are welcome! If you'd like to contribute, please follow these steps:
+- **Stacks**
+  - Implementation using arrays and linked lists.
+  - Applications: balanced parentheses checking, expression evaluation.
 
-Fork the repository.
-1.Create a new branch (git checkout -b feature-branch).
-2.Make your changes and commit them (git commit -m 'Add some feature').
-3.Push to the branch (git push origin feature-branch).
-4.Open a pull request.
-5.Please make sure your code follows the project's coding standards and includes appropriate test cases.
+- **Queues**
+  - Implementation using arrays and linked lists.
+  - Concepts: circular queues, dequeues.
+
+- **Trees**
+  - Types: Binary Trees, Binary Search Trees (BST), AVL Trees.
+  - Tree traversal techniques: Inorder, Preorder, Postorder.
+
+- **Graphs**
+  - Graph representations: adjacency lists, matrices.
+  - Graph traversal techniques: BFS (Breadth-First Search), DFS (Depth-First Search).
+
+- **Hash Tables**
+  - Implementation of hash tables.
+  - Collision resolution techniques: chaining, open addressing.
+
+### Algorithms
+
+- **Sorting**
+  - Implementation of sorting algorithms: Bubble Sort, Merge Sort, Quick Sort, and more.
+
+- **Searching**
+  - Linear Search, Binary Search, and other advanced search algorithms.
+
+- **Recursion**
+  - Understanding recursion through examples like the Fibonacci series and Tower of Hanoi.
+
+- **Dynamic Programming**
+  - Techniques for solving problems like the knapsack problem, longest common subsequence, etc.
+
+- **Greedy Algorithms**
+  - Implementation of greedy algorithms like Dijkstra's shortest path, Huffman coding, etc.
+
+- **Backtracking**
+  - Solving problems using backtracking, such as N-Queens and Sudoku.
+
+### Contributing
+
+Contributions are welcome! If you'd like to contribute, please follow these steps:
+
+1. Fork the repository.
+2. Create a new branch (`git checkout -b feature-branch`).
+3. Make your changes and commit them (`git commit -m 'Add some feature'`).
+4. Push to the branch (`git push origin feature-branch`).
+5. Open a pull request.
+
+Please make sure your code follows the project's coding standards and includes appropriate test cases.
 
 License
 This repository is licensed under the MIT License. See the LICENSE file for more details.
