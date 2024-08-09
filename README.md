@@ -38,3 +38,6 @@ To get started with the code in this repository:
 1. Clone the repository:
    ```bash
    git clone https://github.com/Chetan2708/python_dsa.git
+2. cd python_dsa
+3. python script_name.py
+
