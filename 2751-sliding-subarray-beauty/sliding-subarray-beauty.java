@@ -3,11 +3,11 @@ class Solution {
         int i = 0 ;
         int j = 0 ;
         int n = nums.length;
-        int[] freq = new int[101];
+        int[] freq = new int[51];
         int[] res = new int [n - k + 1];
 
         while (j < n){
-            freq[nums[j] + 50]++;
+            if (nums[j] < 0) freq[nums[j] + 50]++;
 
             if (j-i+1 == k){  
                 int count = 0 ;
@@ -19,8 +19,8 @@ class Solution {
                         break;
                     } 
                 }
-                res[i] = beauty ;
-                freq[nums[i] + 50 ]--;
+                res[j - k + 1] = beauty;
+                if (nums[i] < 0) freq[nums[i] + 50]--;
                 i++;
             }
             j++; 
