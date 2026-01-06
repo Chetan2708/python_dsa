@@ -1,39 +1,55 @@
 class MinStack {
 
-    private ArrayDeque<int[]> stack;
+    private ArrayDeque<Long> stack;
+    private long minElement;
 
     public MinStack() {
         stack = new ArrayDeque<>();
+        minElement = 0;
     }
 
-    public void push(int val) {
-        if( stack.isEmpty() ) stack.push( new int[]{val,val});
-        else {
-            int currentMin = stack.peek()[1];
-            int newMin = Math.min(currentMin , val);
+    public void push(int x) {
 
-            stack.push(new int[]{val, newMin});
+        if (stack.isEmpty()) {
+            stack.push((long) x);
+            minElement = x;
+            return;
+        }
+
+        if (x >= minElement) {
+            stack.push((long) x);
+        } else {
+            long encoded = 2L * x - minElement;
+            stack.push(encoded);
+            minElement = x;
         }
     }
 
-    public void pop() {
-        stack.pop();
+    public int pop() {
+
+        long top = stack.pop();
+
+        if (top >= minElement) {
+            return (int) top;
+        } else {
+            long originalMin = minElement;
+            minElement = 2L * minElement - top;
+            return (int) originalMin;
+        }
     }
 
     public int top() {
-        return stack.peek()[0];
+
+        long top = stack.peek();
+
+        if (top >= minElement) {
+            return (int) top;
+        } else {
+            return (int) minElement;
+        }
     }
 
     public int getMin() {
-        return stack.peek()[1];
+        return (int) minElement;
     }
 }
-
-/**
- * Your MinStack object will be instantiated and called as such:
- * MinStack obj = new MinStack();
- * obj.push(val);
- * obj.pop();
- * int param_3 = obj.top();
- * int param_4 = obj.getMin();
- */
